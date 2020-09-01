@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    div{
+        text-align: center;
+    }
+</style>
+
+    <script>
+        var i = 0
+        function ChangeImage(){
+            if(i%2==0){
+                document.getElementById("img").src="./image/image1.png"
+                i++;
+            }else{
+                document.getElementById("img").src="./image/image2.png"
+                i++;
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <div>
+<img id="img" src="image/image3.png" style="width:500px; height: 500px;">
+<button onclick="ChangeImage()">Change</button>
+</div>
+
+</body>
+</html>
